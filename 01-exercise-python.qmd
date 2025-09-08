@@ -202,7 +202,7 @@ factor_plot = (
     factor_contributions, 
     aes(x='reorder(Factor, Average_Contribution)', y='Average_Contribution')
   )
-  + geom_col(fill="steelblue", alpha=0.8)
+  + geom_col(alpha=0.8)
   + coord_flip()
   + labs(
     title="Average Contribution of Factors to Happiness",
