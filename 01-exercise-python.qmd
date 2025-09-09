@@ -16,11 +16,14 @@ execute:
 import pandas as pd
 import numpy as np
 from plotnine import *
+from quarto import theme_brand_plotnine
+from brand_yml import Brand
 
 whr = pd.read_csv("data/whr.csv")
 
 theme_whr = (
-  theme_minimal()
+  theme_brand_plotnine("_brand.yml")
+  + theme_minimal()
   + theme(
     plot_subtitle=element_text(size=12),
     plot_title=element_text(size=14, weight='bold')
