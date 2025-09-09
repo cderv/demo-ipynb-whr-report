@@ -286,7 +286,7 @@ stacked_plot
 
 #### Patterns Among Top Countries
 
-- **Nordic countries tend to be happy**: Finland (`{python} round(top_countries_2024.iloc[0]['ladder_score'], 2)`), Denmark (`{python} round(top_countries_2024.iloc[1]['ladder_score'], 2)`), Iceland (`{python} round(top_countries_2024.iloc[2]['ladder_score'], 2)`), Sweden (`{python} round(top_countries_2024.iloc[3]['ladder_score'], 2)`), and Norway (`{python} round(top_countries_2024.iloc[6]['ladder_score'], 2)`) show similar balanced patterns.
+- **Nordic countries tend to be happy**: Finland (`{python} f"{round(top_countries_2024.iloc[0]['ladder_score'], 2)}"`), Denmark (`{python} f"{round(top_countries_2024.iloc[1]['ladder_score'], 2)}"`), Iceland (`{python} f"{round(top_countries_2024.iloc[2]['ladder_score'], 2)}"`), Sweden (`{python} f"{round(top_countries_2024.iloc[3]['ladder_score'], 2)}"`), and Norway (`{python} f"{round(top_countries_2024.iloc[6]['ladder_score'], 2)}"`) show similar balanced patterns.
 - **Effect of GDP varies**: Luxembourg has the highest GDP contribution, while Costa Rica has high happiness with lower GDP contribution, but strong social factors.
 - **Balanced Approach**: No single happiness factor dominates. 
 
