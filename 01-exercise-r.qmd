@@ -21,7 +21,7 @@ whr <- read_csv(here::here("data/whr.csv"))
 
 theme_whr <-
   theme_minimal()
-  theme(
+  + theme(
     plot.title = element_text(size = 14, face = "bold"),
     plot.subtitle = element_text(size = 12)
   ) 
@@ -55,8 +55,8 @@ global_trends |>
   geom_line(linewidth = 1.5) +
   geom_point(size = 3) +
   labs(
-    title = "Global Average Happiness Over Time",
-    subtitle = "World Happiness Report Data (2011-2024)",
+    title = "Global Average Happiness Over Time (2011-2024)",
+    subtitle = "Average happiness has increased over the past 12 years",
     x = "Year",
     y = "Average Happiness Score"
   ) +
@@ -113,7 +113,9 @@ improvements_plot <-
   geom_point(size = 2.5) +
   scale_x_continuous(breaks = scales::breaks_width(3)) +
   labs(
-    title = "Greatest improvements",
+    title = "National Happiness Score Over Time",
+    subtitle = 
+      "For countries with the largest increases in happiness since 2011",
     x = "Year",
     y = "Happiness Score",
     color = NULL
@@ -135,7 +137,9 @@ declines_plot <-
         c("#d62728", "#ff7f0e", "#8c564b", "#e377c2", "#7f7f7f")
   ) +
   labs(
-    title = "Greatest Declines",
+    title = "National Happiness Score Over Time",
+    subtitle = 
+      "For countries with the largest decreases in happiness since 2011",
     x = "Year", 
     y = "Happiness Score",
     color = NULL
@@ -185,12 +189,13 @@ ggplot(aes(x = reorder(Factor, Average_Contribution), y = Average_Contribution))
   geom_col(alpha = 0.8) +
   coord_flip() +
   labs(
-    title = "Average Contribution of Factors to Happiness",
-    subtitle = "Based on World Happiness Report data (2019-2024)",
+    title = "Average Contribution of Factors to Worldwide Happiness",
+    subtitle = 
+      "Social support and per capita GDP are the greatest contributors",
     x = "Factor",
     y = "Average Contribution to Happiness Score"
   ) +
-  # theme_whr +
+  theme_whr +
   theme(axis.text = element_text(size = 11)) 
 ```
 
@@ -232,7 +237,6 @@ stacked_data |>
   geom_col() +
   labs(
     title = "Happiness Factor Breakdown for Top 10 Happiest Countries",
-    subtitle = "2024 World Happiness Report Data",
     x = "Country",
     y = "Contribution to Happiness Score",
     fill = "Contributing Factor"

@@ -24,7 +24,7 @@ theme_whr = (
   + theme_minimal()
   + theme(
     plot_subtitle=element_text(size=12),
-    plot_title=element_text(size=14, weight='bold')
+    plot_title=element_text(size=14)
   ) 
 )
 ```

@@ -22,10 +22,10 @@ from brand_yml import Brand
 whr = pd.read_csv("data/whr.csv")
 
 theme_whr = (
-  + theme_minimal()
+  theme_minimal()
   + theme(
     plot_subtitle=element_text(size=12),
-    plot_title=element_text(size=14, weight='bold')
+    plot_title=element_text(size=14)
   ) 
 )
 ```
@@ -64,8 +64,8 @@ global_plot = (
     axis_text=element_text(size=10)
   ) 
   + labs(
-    title="Global Average Happiness Over Time",
-    subtitle="World Happiness Report Data (2011-2024)",
+    title="Global Average Happiness Over Time (2011-2024)",
+    subtitle="Average happiness has increased over the past 12 years",
     x="Year",
     y="Average Happiness Score"
   ) 
@@ -146,7 +146,8 @@ declines_df["year"] = pd.to_numeric(declines_df["year"], errors="coerce")
   + geom_line(size=1.2)
   + geom_point(size=2.5)
   + labs(
-    title="Greatest improvements",
+    title="National Happiness Over Time",
+    subtitle="For countries with the largest increases in happiness since 2011",
     x="Year",
     y="Happiness Score",
     color=""
@@ -165,7 +166,8 @@ declines_df["year"] = pd.to_numeric(declines_df["year"], errors="coerce")
     "#d62728", "#ff7f0e", "#8c564b", "#e377c2", "#7f7f7f"
   ])
   + labs(
-    title="Greatest Declines",
+    title="National Happiness Over Time",
+    subtitle="For countries with the largest decreases in happiness since 2011",
     x="Year",
     y="Happiness Score",
     color=""
@@ -208,7 +210,7 @@ factor_plot = (
   + coord_flip()
   + labs(
     title="Average Contribution of Factors to Happiness",
-    subtitle="Based on World Happiness Report data (2024)",
+    subtitle="Social support and per capita GDP are the greatest contributors",
     x="Factor",
     y="Average Contribution to Happiness Score"
   ) 
@@ -274,7 +276,6 @@ stacked_plot = (
   + geom_col()
   + labs(
     title="Happiness Factor Breakdown for Top 10 Happiest Countries",
-    subtitle="2024 World Happiness Report Data",
     x="Country",
     y="Contribution to Happiness Score",
     fill="Contributing Factor"
