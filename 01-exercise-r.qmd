@@ -20,7 +20,7 @@ library(quarto)
 whr <- read_csv(here::here("data/whr.csv"))
 
 theme_whr <-
-  theme_minimal()
+  theme_minimal() +
   theme(
     plot.title = element_text(size = 14, face = "bold"),
     plot.subtitle = element_text(size = 12)
