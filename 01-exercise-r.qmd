@@ -16,6 +16,7 @@ execute:
 library(tidyverse)
 library(patchwork)
 library(quarto)
+library(brand.yml)
 
 whr <- read_csv(here::here("data/whr.csv"))
 
