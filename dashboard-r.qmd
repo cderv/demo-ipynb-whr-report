@@ -163,7 +163,8 @@ ggplot(aes(x = reorder(Factor, Average_Contribution), y = Average_Contribution))
   coord_flip() +
   labs(
     title = "Average Contribution of Factors to Worldwide Happiness",
-    subtitle = "Social support and per capita GDP are the greatest contributors",
+    subtitle = 
+      "Social support and per capita GDP are the greatest contributors",
     x = "Factor",
     y = "Average Contribution to Happiness Score"
   ) +
