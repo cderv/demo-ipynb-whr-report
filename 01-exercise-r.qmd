@@ -191,7 +191,7 @@ ggplot(aes(x = reorder(Factor, Average_Contribution), y = Average_Contribution))
     x = "Factor",
     y = "Average Contribution to Happiness Score"
   ) +
-  # theme_whr +
+  theme_whr +
   theme(axis.text = element_text(size = 11)) 
 ```
 
