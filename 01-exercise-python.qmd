@@ -22,7 +22,7 @@ from brand_yml import Brand
 whr = pd.read_csv("data/whr.csv")
 
 theme_whr = (
-  + theme_minimal()
+  theme_minimal()
   + theme(
     plot_subtitle=element_text(size=12),
     plot_title=element_text(size=14, weight='bold')
