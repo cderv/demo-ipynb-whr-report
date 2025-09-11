@@ -48,7 +48,7 @@ global_trends |>
   geom_point(color = brand$color$palette$teal, size = 3) +
   labs(
     title = "Global Average Happiness Over Time (2011-2024)",
-    subtitle = "Average happiness has increased over the 12 years",
+    subtitle = "Average happiness has increased over the past 12 years",
     x = "Year",
     y = "Average Happiness Score"
   ) +
