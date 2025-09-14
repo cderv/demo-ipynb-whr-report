@@ -1,6 +1,7 @@
 # RStudio project files
 .Rproj.user/
 *.Rproj
+.Rhistory
 
 # Rendered HTML files
 *.html
