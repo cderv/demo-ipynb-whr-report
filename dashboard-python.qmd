@@ -20,8 +20,8 @@ whr = pd.read_csv("data/whr.csv")
 brand = Brand.from_yaml("_brand.yml")
 
 theme_whr = (
-  theme_brand_plotnine("_brand.yml")
-  + theme_minimal()
+  theme_minimal()
+  + theme_brand_plotnine("_brand.yml")
   + theme(
     plot_subtitle=element_text(size=12),
     plot_title=element_text(size=14)
