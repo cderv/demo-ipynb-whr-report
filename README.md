@@ -1,5 +1,6 @@
-# Branded Websites, Presentations, Dashboards, and PDFs with Quarto - Exercises
+# Demo of a Jupyter report prepared for Publication with Quarto
 
-### posit::conf(2025)
+This repository contains a demo of a Jupyter report prepared for publication with Quarto.
 
-Exercises for the "Branded Websites, Presentations, Dashboards, and PDFs with Quarto" workshop.
+Based on workshop materials at https://github.com/posit-dev/quarto-brand-exercises for Posit Conf Quarto workshop.
+
