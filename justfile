@@ -8,35 +8,35 @@ default:
 # Render all WHR-report-analysis notebooks
 render-all:
     @echo "🚀 Starting to render all WHR notebooks..."
-    @echo "📄 [1/6] Rendering WHR-report-analysis.ipynb"
-    @uv run quarto render WHR-report-analysis.ipynb --execute
-    @echo "📄 [2/6] Rendering WHR-report-analysis-1.ipynb"
-    @uv run quarto render WHR-report-analysis-1.ipynb --execute
-    @echo "📄 [3/6] Rendering WHR-report-analysis-2.ipynb"
-    @uv run quarto render WHR-report-analysis-2.ipynb --execute
-    @echo "📄 [4/6] Rendering WHR-report-analysis-3.ipynb"
-    @uv run quarto render WHR-report-analysis-3.ipynb --execute
-    @echo "📄 [5/6] Rendering WHR-report-analysis-4.ipynb"
-    @uv run quarto render WHR-report-analysis-4.ipynb --execute
-    @echo "📄 [6/6] Rendering branded/WHR-report-analysis-5.ipynb"
-    @uv run quarto render branded/WHR-report-analysis-5.ipynb --execute
+    @echo "[1/6]"
+    @just render main
+    @echo "[2/6]"
+    @just render 1
+    @echo "[3/6]"
+    @just render 2
+    @echo "[4/6]"
+    @just render 3
+    @echo "[5/6]"
+    @just render 4
+    @echo "[6/6]"
+    @just render 5
     @echo "✅ All notebooks rendered successfully!"
 
 # Publish all WHR-report-analysis notebooks
 publish-all:
     @echo "📤 Starting to publish all WHR notebooks..."
-    @echo "📄 [1/6] Publishing WHR-report-analysis.ipynb"
-    @uv run quarto publish WHR-report-analysis.ipynb
-    @echo "📄 [2/6] Publishing WHR-report-analysis-1.ipynb"
-    @uv run quarto publish WHR-report-analysis-1.ipynb
-    @echo "📄 [3/6] Publishing WHR-report-analysis-2.ipynb"
-    @uv run quarto publish WHR-report-analysis-2.ipynb
-    @echo "📄 [4/6] Publishing WHR-report-analysis-3.ipynb"
-    @uv run quarto publish WHR-report-analysis-3.ipynb
-    @echo "📄 [5/6] Publishing WHR-report-analysis-4.ipynb"
-    @uv run quarto publish WHR-report-analysis-4.ipynb
-    @echo "📄 [6/6] Publishing branded/WHR-report-analysis-5.ipynb"
-    @pushd branded; uv run quarto publish WHR-report-analysis-5.ipynb; popd
+    @echo "[1/6]"
+    @just publish main
+    @echo "[2/6]"
+    @just publish 1
+    @echo "[3/6]"
+    @just publish 2
+    @echo "[4/6]"
+    @just publish 3
+    @echo "[5/6]"
+    @just publish 4
+    @echo "[6/6]"
+    @just publish 5
     @echo "✅ All notebooks published successfully!"
 
 # Render and publish all notebooks
