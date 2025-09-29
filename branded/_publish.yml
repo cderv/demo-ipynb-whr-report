@@ -1,0 +1,4 @@
+- source: WHR-report-analysis-5.ipynb
+  quarto-pub:
+    - id: a20f7c7d-96ff-4c74-ae71-ec4890ca2fb2
+      url: https://cderv-posit.quarto.pub/whr-report-analysis-5

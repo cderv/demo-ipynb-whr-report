@@ -1,0 +1,20 @@
+- source: WHR-report-analysis.ipynb
+  quarto-pub:
+    - id: cd57a722-00d3-4924-a35d-3479ddbaf294
+      url: https://cderv-posit.quarto.pub/whr-report-analysis
+- source: WHR-report-analysis-1.ipynb
+  quarto-pub:
+    - id: 43033cef-b808-49e7-8c8c-e54012a5ff13
+      url: https://cderv-posit.quarto.pub/whr-report-analysis-1
+- source: WHR-report-analysis-2.ipynb
+  quarto-pub:
+    - id: 25fd897b-9442-4d7e-962d-df3d46ffb8c6
+      url: https://cderv-posit.quarto.pub/whr-report-analysis-2
+- source: WHR-report-analysis-3.ipynb
+  quarto-pub:
+    - id: 6f5313cc-6f41-44a2-a696-f4a4721e6978
+      url: https://cderv-posit.quarto.pub/whr-report-analysis-3
+- source: WHR-report-analysis-4.ipynb
+  quarto-pub:
+    - id: 722b1083-a867-4903-93d3-d625f75ff9a5
+      url: https://cderv-posit.quarto.pub/whr-report-analysis-4
